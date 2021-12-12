@@ -43,7 +43,8 @@ a {
 
 // Main Styles
 body {
-  background-color: $clr-blue-light;
+  background: top/contain no-repeat url(./images/pattern-background-mobile.svg),
+    $clr-blue-light;
 }
 
 .page__container {
@@ -104,6 +105,7 @@ body {
     .card__plan-cost {
       font-size: 0.9rem;
       font-weight: 500;
+      padding: 0.25rem 0 0 0;
       color: $clr-blue-grey;
     }
 

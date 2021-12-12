@@ -1,2 +1,26 @@
 // Media Queries
 // Desktop
+@media (min-width: 600px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    background: top/contain no-repeat
+        url(./images/pattern-background-desktop.svg),
+      $clr-blue-light;
+  }
+
+  .page__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__container {
+    max-width: 400px;
+  }
+}

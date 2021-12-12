@@ -28,7 +28,7 @@ a {
 }
 
 body {
-  background-color: #e0e8ff;
+  background: top/contain no-repeat url(./images/pattern-background-mobile.svg), #e0e8ff;
 }
 
 .page__container {
@@ -83,6 +83,7 @@ body {
 .card__body .card__plan .card__plan-cost {
   font-size: 0.9rem;
   font-weight: 500;
+  padding: 0.25rem 0 0 0;
   color: #7280a7;
 }
 .card__body .card__plan .card__plan-btn {
@@ -122,4 +123,27 @@ body {
 }
 .card__body > .card__btn:last-child {
   margin: 0;
+}
+
+@media (min-width: 600px) {
+  html,
+body {
+    height: 100%;
+  }
+
+  body {
+    background: top/contain no-repeat url(./images/pattern-background-desktop.svg), #e0e8ff;
+  }
+
+  .page__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__container {
+    max-width: 400px;
+  }
 }
