@@ -1,30 +1,42 @@
 // Variables
-    // Colours
+// Colours
 
-    // Fonts
-    // Weights - 500, 700, 900
-    $font-primary: 'Red Hat Display', sans-serif;
+// Fonts
+// Weights - 500, 700, 900
+$font-primary: "Red Hat Display", sans-serif;
 
 // Resets
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
-html, body {
-    min-height: 100%;
+html,
+body {
+  min-height: 100%;
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Global Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: $font-primary;
+}
 
 // Main Styles
 
 // Media Queries
-@import 'mediaqry';
+@import "mediaqry";
