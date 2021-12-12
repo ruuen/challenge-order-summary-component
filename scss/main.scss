@@ -3,7 +3,7 @@
 $clr-blue-vlight: hsl(225, 100%, 98%);
 $clr-blue-light: hsl(225, 100%, 94%);
 $clr-blue: hsl(245, 75%, 52%);
-$clr-blue-dark: rgb(31, 47, 86);
+$clr-blue-dark: hsl(223, 47%, 23%);
 $clr-blue-grey: hsl(224, 23%, 55%);
 
 // Fonts
@@ -47,7 +47,7 @@ body {
 }
 
 .page__container {
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .card__container {
@@ -112,6 +112,14 @@ body {
       font-size: 0.9em;
       font-weight: 700;
     }
+
+    .card__plan-btn:hover {
+      text-decoration: none;
+    }
+
+    .card__plan-btn:visited {
+      color: blue;
+    }
   }
 
   .card__btn {
@@ -119,10 +127,16 @@ body {
     text-align: center;
     font-weight: 900;
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 1.15rem 0;
     margin: 0 0 1rem 0;
     border-radius: 10px;
     color: $clr-blue-grey;
+
+    transition: color 80ms ease;
+  }
+
+  .card__btn:hover {
+    color: $clr-blue-dark;
   }
 
   .card__btn-primary {
@@ -131,6 +145,13 @@ body {
     box-shadow: 0 1px 1px rgba($clr-blue, 0.1), 0 2px 2px rgba($clr-blue, 0.1),
       0 4px 4px rgba($clr-blue, 0.1), 0 8px 8px rgba($clr-blue, 0.1),
       0 16px 16px rgba($clr-blue, 0.1);
+
+    transition: background-color 80ms ease;
+  }
+
+  .card__btn-primary:hover {
+    color: $clr-blue-vlight;
+    background-color: lighten($clr-blue, 15%);
   }
 
   > .card__btn:last-child {

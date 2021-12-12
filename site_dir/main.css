@@ -32,7 +32,7 @@ body {
 }
 
 .page__container {
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .card__container {
@@ -90,20 +90,35 @@ body {
   font-size: 0.9em;
   font-weight: 700;
 }
+.card__body .card__plan .card__plan-btn:hover {
+  text-decoration: none;
+}
+.card__body .card__plan .card__plan-btn:visited {
+  color: blue;
+}
 .card__body .card__btn {
   display: block;
   text-align: center;
   font-weight: 900;
   text-decoration: none;
-  padding: 1rem 0;
+  padding: 1.15rem 0;
   margin: 0 0 1rem 0;
   border-radius: 10px;
   color: #7280a7;
+  transition: color 80ms ease;
+}
+.card__body .card__btn:hover {
+  color: #1f2f56;
 }
 .card__body .card__btn-primary {
   background-color: #3829e0;
   color: #f5f7ff;
   box-shadow: 0 1px 1px rgba(56, 41, 224, 0.1), 0 2px 2px rgba(56, 41, 224, 0.1), 0 4px 4px rgba(56, 41, 224, 0.1), 0 8px 8px rgba(56, 41, 224, 0.1), 0 16px 16px rgba(56, 41, 224, 0.1);
+  transition: background-color 80ms ease;
+}
+.card__body .card__btn-primary:hover {
+  color: #f5f7ff;
+  background-color: #766cea;
 }
 .card__body > .card__btn:last-child {
   margin: 0;
